@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: "poppins","sans-serif";
+    height: 100%;
+
+}
+
+
+.active{
+    display: block;
+}
+
+.topbar{
+    height:100px;
+    display: flex;
+    align-items: center;
+    margin-left: 0%;
+    box-shadow: 0 2px 4px #ccc;    
+    padding: 15px 48px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img{
+    height: 24px;
+    width: 100%;
+
+}
+
+.logo p{
+    font-size: 24px;
+    margin-left: 8px;
+    font-weight: 600;
+    color: rgba(0,0,0,.8);
+}
+.nav{
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav button{
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0085ff;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+.nav button:hover{
+    background-color: #fff;
+    color: #0085ff;
+    border: 1px solid #0085ff;
+  
+}
+
+
+.menutop{
+    display: block;
+    margin-left:20px
+}
+.menutop ul{
+    display: flex;
+}
+
+.menutop ul li{
+    list-style: none;
+    font-size: 14px;
+    color: rgba(0,0,0,.8);
+    font-weight: 600;
+    padding: 24px 0 16px;
+    letter-spacing: .6px;
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+
+.menutop ul li:hover{ 
+    color:#00e091;
+    border-bottom:3px solid #00e091
+}
+
+
+/* login form */
+.loginPage{
+    display: block;
+    
+}
+
+.container_login{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    background-color:   #f6f7fb;
+}
+
+.login{
+    width: 100%;
+    max-width: 500px;
+    max-height: 320px;
+    margin-top: 45px;
+    border: 1px solid  #888888 ;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    box-shadow: 0 0 6px #ccc;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.login h1{
+    font-size: 30px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+
+}
+.forms{
+    cursor: pointer;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 15px 0px;
+}
+.login  input{
+    width: 100%;
+    height: 35px;
+    font-size: 23px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid #888888;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.login button{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px 0px;
+    font-size: 21px;
+    background-color: #00e091;
+    border: none;
+    color: #fff;
+}
+
+
+/* orderPage CSS */
+.orderPage{
+    display: none;
+    box-sizing: border-box;
+    padding: 0 8% 4%;
+    background-color:   #f6f7fb;
+}
+
+
+
+
+
+.orderHeading{
+    display: block;
+   padding: 30px 0px;
+
+}
+.orderHeading h1{
+    font-family: "Poppins",sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+.orderDetails{
+    display: flex;
+ 
+    height: 68vh
+
+}
+.filters h2{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins",sans-serif;
+    padding-bottom: 10px;
+
+}
+
+.orderfilters{
+display: flex;
+flex-direction: column;
+width: 180px;
+}
+
+.orderfilters p{
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.orderfilters .checkBox{
+   margin: 15px 0px;
+}
+
+.orderTable{
+    display: block;
+    width: 100%;
+    
+}
+
+.orderTable table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+/* /* Product Page CSS */ 
+
+.productPage{
+
+    display: None;
+    box-sizing: border-box;
+    padding: 0 8% 4%;
+    background-color:   #f6f7fb;
+    overflow: scroll;
+
+}
+
+/* /* Product Page CSS */ 
+.userPage{
+    display: None;
+    box-sizing: border-box;
+    padding: 0 8% 4%;
+    background-color:   #f6f7fb;
+}
+
+.search{
+    width: 100%;
+    max-width: 500px;
+    max-height: 320px;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+} 
+
+.search input[type="text"]{
+    width: 100%;
+    height: 35px;
+    font-size: 23px;
+ 
+    outline: none;
+    border:none ;
+    border-bottom: 1px solid #00e091;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search button[type="submit"]{
+
+    background-color: #00e091;
+    border: none;
+    outline: none;
+    padding:5px 25px; 
+    margin-left: 10px;
+    color: #fff;
+    border-radius: 5px;
+
+
+}
+
+.search button[type="submit"]:hover{
+
+    background-color: #fff;
+    border: 2px solid #00e091;
+    outline: none;
+    padding:5px 25px; 
+    margin-left: 10px;
+    color: #00e091;
+   
+    
+}
+
+.userTable{
+    width: 100%;
+
+}
+

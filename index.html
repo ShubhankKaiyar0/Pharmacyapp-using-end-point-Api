@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <!-- Header Scetion -->
+        <div class="topbar">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+                <p>Kafene</p>
+            </div>
+            <div class="nav" id="nav">
+
+                <div class="menutop" id="menutop">
+                    <ul>
+                        <li id="Order"><a href="#"></a> Orders</li>
+                        <li id="Product"><a href="#" ></a> Products</li>
+                        <li id="User"><a href="#" ></a> Users</li>
+                    </ul>
+                </div>
+                <div class="logout">
+                    <button id="logoutBtn">Log out</button>
+                </div>
+            </div>
+        </div>
+    <!-- end-->
+
+    <!-- loginform -->
+       <div class="loginPage" id="loginPage">
+        <div class="container_login">
+            <div class="login">
+                <h1>Sign In</h1>
+                <div class="forms">
+
+                    <input id="userName" type="text" placeholder="Id" name="fname">
+                    <input id="userPass" type="password" placeholder="Password" name="lname">
+                </div>
+                   <button id="sbtBtn"type="submit">Submit</button>
+
+            </div>
+        </div>
+       </div>
+    <!-- end -->
+
+    <!-- Orderpage -->
+    <div class="orderPage" id="page1">
+        <div class="orderHeading">
+            <h1>Orders</h1>
+        </div>
+        <div class="orderDetails">
+            <div class="filters">
+
+                <h2>Filters</h2>
+                <div class="orderfilters">
+                    <p>Count: <span id="count"></span> </p>
+                    
+                    <label for="New" class="checkBoxOrder"> <input type="checkbox" id="New" > New</label>
+                    
+                    <label for="Packed" class="checkBoxOrder"><input type="checkbox" id="Packed" > Packed</label>
+                    
+                    <label for="InTransit" class="checkBoxOrder"> <input type="checkbox" id="InTransit" > In Transit</label>
+                    
+                    <label for="Delivered" class="checkBoxOrder"> <input type="checkbox" id="Delivered" > Delivered</label>   
+                </div>
+            </div>
+            
+            <div class="orderTable">
+                <table id="ordersTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ordersBody">
+                      
+                    </tbody>
+                </table>
+            </div>
+            
+
+               
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- end -->
+
+       <!-- Productpage -->
+       <div class="productPage" id="page2">
+        <div class="orderHeading">
+            <h1>Products</h1>
+        </div>
+        <div class="orderDetails">
+            <div class="filters">
+
+                <h2>Filters</h2>
+                <div class="orderfilters">
+                    <p>Count: <span id="countProduct"></span> </p>
+                    
+                    <label for="Expired" class="checkBoxProduct"> <input type="checkbox" id="Expired" > Expired</label>
+                    <label for="LowStock" class="checkBoxProduct"><input type="checkbox" id="LowStock" >Low stock</label>
+                </div>
+            </div>
+            
+            <div class="orderTable">
+                <table id="ordersTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Product Name</th>
+                            <th>Brand</th>
+                            <th>Expiry Date</th>
+                            <th>Unit stock</th>
+                            <th>Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productBody">
+                      
+                    </tbody>
+                </table>
+            </div>
+            
+
+               
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- end -->
+
+  <!-- Productpage -->
+    <div class="userPage" id="page3">
+        <div class="userPage" id="page3">
+            <div class="orderHeading">
+                <h1>Users</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search By Name" id="searchData">
+                <button type="button" id="reset">Reset</button>
+            </div>
+            <div class="orderTable">
+                <table id="ordersTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th class="Profile">profilePic</th>
+                            <th>fullName</th>
+                            <th>DOB</th>
+                            <th>gender</th>
+                            <th>currentCity</th>
+                            <th>currentCountry</th>
+                        </tr>
+                    </thead>
+                    <tbody id="UserArea">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
